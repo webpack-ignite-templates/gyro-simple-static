@@ -91,13 +91,12 @@ module.exports = env => {
             parallelism: 5,
             stats: {children: false},
 
-            //recordsPath: path.resolve(startupFolder, '.ignite', 'records.json'),
+            recordsPath: path.resolve(startupFolder, '.ignite', 'records.json'),
 
             devtool: webpackIgnite.Utils.ifProduction(configuration.sourceMaps.production, configuration.sourceMaps.development),
 
             devServer: {
                 contentBase: path.resolve(startupFolder, configuration.source.assetsPath),
-                //watchContentBase: true,
                 host: configuration.devServer.host,
                 disableHostCheck: configuration.devServer.allowExternal,
                 open: configuration.devServer.openBrowser,
@@ -227,10 +226,7 @@ module.exports = env => {
                             test: /(\.scss|\.css)$/,
                             include: [path.resolve(startupFolder, configuration.source.path), ...configuration.advanced.sass.includes],
                             exclude: webpackIgnite.Utils.checkIf(configuration.advanced.sass.excludes.length > 0, configuration.advanced.sass.excludes, /null_exclude/),
-                            oneOf: [
-                                {test: /html-webpack-plugin-for-multihtml/, use: "null-loader"},
-                                {use: extractCSSFile.extract([...cssLoaderConfig].filter(Boolean))}
-                            ]
+                            use: extractCSSFile.extract({ use: [...cssLoaderConfig].filter(Boolean), publicPath: configuration.advanced.fileLoader.relativeAssetsPath})
 
                         }
                     ),
@@ -300,7 +296,6 @@ module.exports = env => {
                 //Also for Async
                 new webpack.optimize.CommonsChunkPlugin({
                     name: configuration.advanced.chunkNames.common,
-                    //chunks: Object.keys(entries).map((name) => name),
                     async: true,
                     deepChildren: true
                 }),

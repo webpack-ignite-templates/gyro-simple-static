@@ -16,28 +16,25 @@ This will create a fresh repository that will eventually be linked up to the gyr
 
 #### Install NPM Packages
 
-* run `yarn install` or `npm install` from the console in the root of the project
+* run `npm install` from the console in the root of the project
 
 ## 2. Configuration
 
 #### Config files 
 
-Most of the configuration files are in the `.ignite` folder. The project defaults are generally good for prototyping or even most small websites. If you need to edit the defaults you should open `config.js` and edit the values contained in that file:
+Most of the configuration files are in the `.ignite` folder. The project defaults are generally good for prototyping or even most small websites. If you need to edit the defaults you should open `configuration.js` and edit the values contained in that file:
 
 ## 3. Start Developing!!
 
-#### Setup Entry Pages / Templates
-Edit the `config/entries.js` file to contain the pages you need to create. Follow the directions contained in that file, talk to Matt with any questions about this file
-
-#### Setup JS Files for each entry
+#### Setup JS /EJS Files for each entry
 
 #### Start webpack
 
 * `npm run start`
 
-#### Edit HTML and CSS
+#### Edit HTML and SCSS
 
 
 ## 4. Production Build Directions
 
-For a production build run `npm run build`. The results of the build will be in the `build` folder and can be zipped and sent to the client
+For a production build run `npm run build`. The results of the build will be in the `build` folder

@@ -1,0 +1,17 @@
+header {
+  @include xy-grid('horizontal');
+  @include flex-align('left', 'middle');
+  
+  a {
+    @include xy-cell('shrink');
+  }
+
+  h1 {
+    @include xy-cell(12);
+
+    @include breakpoint(medium) {
+      @include xy-cell(8);
+    }
+  }
+
+}

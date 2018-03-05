@@ -1,4 +1,6 @@
-const {realpathSync} = require('fs-extra');
+const {
+    realpathSync
+} = require('fs-extra');
 const __appDir = realpathSync(process.cwd());
 const path = require('path');
 const os = require('os');
@@ -109,26 +111,30 @@ module.exports = {
         babelWorkerPool: {
             threads: 2
         },
-        sassWorkerPool:{
+        sassWorkerPool: {
             threads: 2
         }
     },
     output: {
-        inlineAssetMaxSize: 20000,
+        outputPath: 'build',
+        serverPath: '',
     },
     advanced: {
         sass: {
             includes: [path.join(__appDir, 'node_modules/foundation-sites/scss')]
         },
+        fileLoader: {
+            relativeAssetsPath: '../'
+        },
         urlLoader: {
             processImages: true,
-            imageProcessingPlugins:
-                [
-                    gifSicle(),
-                    mozJpeg({quality:85}),
-                    optiPng(),
-                    svgO()
-                ]
+            imageProcessingPlugins: [
+                gifSicle(),
+                mozJpeg({
+                    quality: 85
+                }),
+                svgO()
+            ]
         }
     },
 };

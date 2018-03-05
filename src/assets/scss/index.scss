@@ -1,0 +1,28 @@
+@import './foundation/foundation';
+@import './_mixins/helpers';
+
+main {
+    section {
+        @include xy-grid('horizontal');
+        @include flex-align('left', 'middle');
+
+        h2 {
+            @include full-half;
+        }
+
+        p {
+            @include full-half;
+        }
+
+        div {
+            @include full-half-third;
+            @include flex;
+            @include flex-align('center', 'middle');
+
+            height: rem-calc(100);
+            margin: rem-calc(10);
+            background: $primary-color;
+            color: $white;           
+        }
+    }
+}

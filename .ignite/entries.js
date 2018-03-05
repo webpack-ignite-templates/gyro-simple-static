@@ -50,6 +50,4 @@ if(entryFiles) {
     });
 };
 
-console.log(dynamicEntries);
-
 module.exports = dynamicEntries;

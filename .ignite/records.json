@@ -1,0 +1,79 @@
+{
+  "html-webpack-plugin for \"index.html\"": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!src/assets/img/icons/apple-touch-icon.png": "Eovp",
+          "node_modules/html-loader/index.js??ref--6-0!node_modules/ejs-html-loader/lib/index.js!src/_partials/header.ejs": "XVV6",
+          "node_modules/html-webpack-plugin-for-multihtml/lib/loader.js!node_modules/html-loader/index.js??ref--6-0!node_modules/ejs-html-loader/lib/index.js!src/index.ejs": "knra",
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!src/assets/img/logos/gyro-1.png": "nywo",
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!src/assets/img/icons/favicon.ico": "sj8P",
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!src/assets/img/test/uhf_tree.jpg": "gHCr",
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!node_modules/imagemin-webpack/imagemin-loader.js??ref--2-1!src/assets/img/icons/apple-touch-icon.png": "Eovp",
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!node_modules/imagemin-webpack/imagemin-loader.js??ref--2-1!src/assets/img/test/uhf_tree.jpg": "gHCr",
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!node_modules/imagemin-webpack/imagemin-loader.js??ref--2-1!src/assets/img/logos/gyro-1.png": "nywo",
+          "node_modules/url-loader/dist/cjs.js??ref--2-0!node_modules/imagemin-webpack/imagemin-loader.js??ref--2-1!src/assets/img/icons/favicon.ico": "sj8P"
+        },
+        "usedIds": {
+          "Eovp": "Eovp",
+          "XVV6": "XVV6",
+          "knra": "knra",
+          "nywo": "nywo",
+          "sj8P": "sj8P",
+          "gHCr": "gHCr"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    }
+  ],
+  "extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/thread-loader/dist/cjs.js??ref--5-1!node_modules/css-loader/index.js??ref--5-2!node_modules/postcss-loader/lib/index.js!node_modules/sass-loader/lib/loader.js??ref--5-4!src/assets/scss/layout.scss": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/lib/css-base.js": "FZ+f",
+          "node_modules/thread-loader/dist/cjs.js??ref--5-1!node_modules/css-loader/index.js??ref--5-2!node_modules/postcss-loader/lib/index.js!node_modules/sass-loader/lib/loader.js??ref--5-4!src/assets/scss/layout.scss": "uyq2"
+        },
+        "usedIds": {
+          "FZ+f": "FZ+f",
+          "uyq2": "uyq2"
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "byBlocks": {},
+        "usedIds": {
+          "0": 0
+        }
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "node_modules/css-loader/lib/css-base.js": "FZ+f",
+      "node_modules/extract-text-webpack-plugin/dist/loader.js??ref--5-0!node_modules/thread-loader/dist/cjs.js??ref--5-1!node_modules/css-loader/index.js??ref--5-2!node_modules/postcss-loader/lib/index.js!node_modules/sass-loader/lib/loader.js??ref--5-4!src/assets/scss/layout.scss": "MjQC",
+      "node_modules/thread-loader/dist/cjs.js??ref--4-0!node_modules/babel-loader/lib/index.js??ref--4-1!node_modules/eslint-loader/index.js!src/js/pages/index.js": "gM2Z"
+    },
+    "usedIds": {
+      "FZ+f": "FZ+f",
+      "MjQC": "MjQC",
+      "gM2Z": "gM2Z"
+    }
+  },
+  "chunks": {
+    "byName": {
+      "index": "index",
+      "runtime": "runtime"
+    },
+    "byBlocks": {},
+    "usedIds": {
+      "index": "index",
+      "runtime": "runtime"
+    }
+  }
+}
